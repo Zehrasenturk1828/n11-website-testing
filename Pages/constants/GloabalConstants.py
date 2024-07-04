@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
+
+#ProductCategory
 #test_selecting_subcategory
 CATEGORY_XPATH = (By.XPATH, "//header[@id='header']/nav[@class='catMenu']/ul/li[1]/a[@title='Moda']")
 SUBCATEGORY_XPATH = (By.XPATH, "//header[@id='header']/nav[@class='catMenu']/ul[@class='container']//a[@title='Ayakkabı & Çanta']/img")
@@ -15,3 +17,24 @@ BREADCRUMB_XPATH = (By.XPATH, "//*[@id='breadCrumb']")
 BRAND_MAVI_XPATH = (By.XPATH, "/html//div[@id='contentCategory']//div[@class='dynamicPageContainer']/div[4]/a[@title='Mavi']/img[@alt='Mavi']")
 SELLER_NAME_XPATH = (By.XPATH, "//*[@id='contentSellerShop']/div/section[1]/div[2]/div[2]/div[1]/div[1]/h1")
 BRAND_MAVI_TEXT = "Mavi"
+
+#ProductFiltering
+#test_searchbutton_function_control
+SEARCHBOX_XPATH = (By.XPATH, "/html//input[@id='searchData']")
+PRODUCT_NAME = "Telefon"
+SEND_BUTTON = (By.XPATH, "/html//header[@id='header']/div[@class='container']//a[@title='ARA']/span[@class='iconsSearch']")
+PRODUCT_CATEGORY_PATH = (By.XPATH, "//*[@id='breadCrumb']")
+PRODUCT_CATEGORY_PATH_TEXT = ("Ana Sayfa\nElektronik\nTelefon & Aksesuarları\nCep Telefonu\ntelefon")
+
+#test_price_range_filters
+PRICE_RANGE_MIN = "5000"
+PRICE_RANGE_MIN_XPATH = (By.XPATH, "//*[@id='minPrice']")
+PRICE_RANGE_MAX = "10000"
+PRICE_RANGE_MAX_XPATH = (By.XPATH, "//*[@id='maxPrice']")
+CONFIRM_FILTERS_XPATH = (By.XPATH, "//*[@id='priceSearchButton']")
+FILTER_GROUP_XPATH = (By.XPATH, "//*[@id='contentListing']/div/div[2]/div[1]/section[2]/div/div/div")
+FILTER_GROUP_TEXT = "5000 TL - 10000 TL"
+
+#test_brand_filters
+BRAND_XPATH = (By.XPATH, "//*[@id='contentListing']/div/div[2]/div[1]/section[5]/div/div[2]/div[1]/label/span")
+BRAND_FILTER_GROUP_TEXT = "Samsung"

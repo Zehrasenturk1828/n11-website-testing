@@ -7,9 +7,6 @@ from Pages.constants.GloabalConstants import *
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from Pages.PageBase import PageBase
-import pyautogui
-import random
-import string
 
 @pytest.mark.usefixtures("setup")
 class Selecting_subcategory(PageBase):
