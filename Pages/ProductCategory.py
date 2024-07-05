@@ -3,7 +3,7 @@ import pytest
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from Pages.constants.GloabalConstants import *
+from constants.GloabalConstants import *
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from Pages.PageBase import PageBase
