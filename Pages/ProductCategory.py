@@ -9,6 +9,8 @@ from selenium.webdriver.common.by import By
 from Pages.PageBase import PageBase
 
 @pytest.mark.usefixtures("setup")
+
+#TS-01 TC-01
 class Selecting_subcategory(PageBase):
     def __init__(self,driver):
         super().__init__(driver)
@@ -28,6 +30,7 @@ class Selecting_subcategory(PageBase):
         products_list_result = self.wait_element_presence(RESULT_TEXT_CLASS)
         return products_list_result.text
 
+#TS-01 TC-02
 class Selecting_maincategory(PageBase):
     def __init__(self,driver):
         super().__init__(driver)
@@ -48,7 +51,8 @@ class Selecting_maincategory(PageBase):
     def verify_listed_products(self):
         products_list_result = self.wait_element_presence(BREADCRUMB_XPATH)
         return products_list_result.text
-    
+
+#TS-01 TC-03  
 class Selecting_brandcategory(PageBase):
     def __init__(self,driver):
         super().__init__(driver)

@@ -7,6 +7,8 @@ import softest
 
 @pytest.mark.usefixtures("setup")
 class TestProductCategory(softest.TestCase):
+
+    #TS-01 TC-01
     def test_selecting_subcategory(self):
 
         Select_category = Selecting_subcategory(self.driver)
@@ -15,6 +17,7 @@ class TestProductCategory(softest.TestCase):
         self.soft_assert(self.assertEqual, RESULT_TEXT, Select_category.verify_listed_products(), "ERROR MESSAGE")
         self.assert_all()
     
+    #TS-01 TC-02
     def test_selecting_maincategory(self):
 
         Select_maincategory = Selecting_maincategory(self.driver)
@@ -25,6 +28,7 @@ class TestProductCategory(softest.TestCase):
         self.soft_assert(self.assertEqual, BREADCRUMB_TEXT, Select_maincategory.verify_listed_products(), "ERROR MESSAGE")
         self.assert_all()
 
+    #TS-01 TC-03
     def test_selecting_brandcategory(self):
 
         Select_brandcategory = Selecting_brandcategory(self.driver)
